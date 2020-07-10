@@ -7,12 +7,8 @@
                 <img src="img/icon-facebook.svg" alt="Kiwi standing on oval"/> <p>@nathanf</p>
             </div>
                 <div class="overall_one_numbers">
-                    <p>1987
-                        <br>
-                        <span>
-                           FOLLOWERS
-                          </span>
-                    </p>
+                    <p class="overall_one_numbers_one">1987</p>
+                    <p class="overall_one_numbers_two"> FOLLOWERS</p>
                 </div>
                 <div class="overall_one_today">
                     <img src="img/icon-up.svg" alt="Kiwi standing on oval"/> <p>12 Today</p>
@@ -23,12 +19,8 @@
                     <img src="img/icon-facebook.svg" alt="Kiwi standing on oval"/> <p>@nathanf</p>
                 </div>
                 <div class="overall_one_numbers">
-                    <p>1987
-                        <br>
-                        <span>
-                           FOLLOWERS
-                          </span>
-                    </p>
+                    <p class="overall_one_numbers_one">1987</p>
+                    <p class="overall_one_numbers_two"> FOLLOWERS</p>
                 </div>
                 <div class="overall_one_today">
                     <img src="img/icon-up.svg" alt="Kiwi standing on oval"/> <p>12 Today</p>
@@ -39,12 +31,8 @@
                     <img src="img/icon-facebook.svg" alt="Kiwi standing on oval"/> <p>@nathanf</p>
                 </div>
                 <div class="overall_one_numbers">
-                    <p>1987
-                        <br>
-                        <span>
-                           FOLLOWERS
-                          </span>
-                    </p>
+                    <p class="overall_one_numbers_one">1987</p>
+                    <p class="overall_one_numbers_two"> FOLLOWERS</p>
                 </div>
                 <div class="overall_one_today">
                     <img src="img/icon-up.svg" alt="Kiwi standing on oval"/> <p>12 Today</p>
@@ -55,12 +43,8 @@
                     <img src="img/icon-facebook.svg" alt="Kiwi standing on oval"/> <p>@nathanf</p>
                 </div>
                 <div class="overall_one_numbers">
-                    <p>1987
-                        <br>
-                        <span>
-                           FOLLOWERS
-                          </span>
-                    </p>
+                    <p class="overall_one_numbers_one">1987</p>
+                    <p class="overall_one_numbers_two"> FOLLOWERS</p>
                 </div>
                 <div class="overall_one_today">
                     <img src="img/icon-up.svg" alt="Kiwi standing on oval"/> <p>12 Today</p>
