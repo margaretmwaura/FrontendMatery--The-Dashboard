@@ -1,0 +1,10 @@
+@import "colors";
+@import "main/main";
+@import "../../../foundation/css/app.css";
+@import "../../../foundation/css/foundation.css";
+@import "summary/summary";
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("http://localhost:3000/fonts/inter-variablefont_sIntwght-webfont.woff") format("woff")
+}

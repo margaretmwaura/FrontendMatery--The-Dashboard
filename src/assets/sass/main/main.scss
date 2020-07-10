@@ -1,0 +1,93 @@
+.main {
+  height: 900px;
+  font-family: 'CustomFont';
+
+  @media screen and (max-width:500px) {
+   height: 2000px;
+  }
+
+  &_top {
+    background-color: $very_dark_blue_two;
+    padding-top: 5%;
+
+    &_content_left {
+
+      p {
+
+        font-weight: bolder;
+        color: $white;
+        font-size: 25px;
+        line-height: .9em;
+      }
+      span {
+        font-size: 16px;
+        color: $dark_saturated_blue;
+      }
+    }
+
+    &_content_right {
+
+      p {
+        color: $white;
+        float: right;
+      }
+
+      @media screen and (max-width:500px) {
+        //The setting of float to none is important so that the float on span can apply
+        p {
+          float: none;
+        }
+
+        span{
+          float: right;
+        }
+      }
+
+      /* toggle in label designing */
+      .toggle {
+        position : relative ;
+        display : inline-block;
+        width : 40px;
+        height : 16px;
+        border-radius: 30px;
+        top: 1px;
+        background-image: linear-gradient(to right, $dark_theme_one, $dark_theme_two)
+      }
+
+      /* After slide changes .. the left value affects how far the ball goes to the left */
+      .toggle:after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 12px;
+        border-radius: 30px;
+        background-color: $very_dark_blue_two;
+        top: 1px;
+        left: 4px;
+        transition:  all 0.5s;
+      }
+
+      /* Checkbox cheked effect .. the left value affects how far the ball goes to the right */
+      .checkbox:checked + .toggle::after {
+        left : 24px;
+      }
+
+      /* Checkbox cheked toggle label bg color */
+      .checkbox:checked + .toggle {
+        border: 1px solid $very_dark_blue_two;
+      }
+      .checkbox:checked + .toggle:after {
+        background-color: $very_dark_blue_two;
+      }
+      /* Checkbox vanished */
+      .checkbox {
+        display : none;
+      }
+    }
+  }
+
+  &_bottom {
+    background-color: $very_dark_blue;
+  }
+}
+
