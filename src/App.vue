@@ -1,5 +1,6 @@
 <template>
-    <div class="grid-frame grid-y main">
+    <!-- To note grid-frame does not allow a web page to be scrollable -->
+    <div class="grid-y main">
         <div class="large-3 medium-3 small-3 main_top">
             <div class="grid-container grid-x">
                 <div class="cell large-1 medium-1 small-0"/>

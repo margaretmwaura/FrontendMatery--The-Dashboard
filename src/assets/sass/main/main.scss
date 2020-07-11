@@ -1,12 +1,19 @@
-body{
-  //-webkit-overflow-scrolling: touch;
-  height: 600px;
-  position: relative;
+//body {
+//  //
+//
+//
+//}
+
+
+html,body{
+  height: 100%;
   font-family: 'CustomFont';
   width: 100%;
-  .main {
-    height: 100%;
-    overflow-y: scroll;
+  overflow-y: scroll;
+}
+
+.main {
+
     &_top {
       background-color: $very_dark_blue_two;
       padding-top: 5%;
@@ -87,9 +94,11 @@ body{
     }
 
     &_bottom {
+
       background-color: $very_dark_blue;
 
       &_overview {
+
         padding-top: 5%;
         p{
           font-weight: bolder;
@@ -98,8 +107,8 @@ body{
         }
       }
     }
-  }
 }
+
 
 
 
