@@ -1,0 +1,52 @@
+.statistics {
+  margin-top: 2%;
+  &_one{
+
+    &_data{
+      border-radius: 2%;
+      padding: 2% 2% 0 2%;
+      height: auto;
+      display: block;
+      background-color: $boxes;
+      p{
+        display:inline-block;
+      }
+      img{
+        vertical-align: middle;
+      }
+
+      &_top
+      {
+        p{
+          color: $dark_saturated_blue;
+          font-weight: bold;
+        }
+        img{
+          float: right;
+        }
+      }
+
+      &_bottom {
+        p{
+          color:$white;
+          font-size: 30px;
+          font-weight: bolder;
+          display:inline-block;
+        }
+        span{
+          vertical-align: middle;
+          //bottom: 0;
+          float: right;
+          margin-top: 10%;
+        }
+
+        .extra{
+          color: $lime_green;
+          font-weight: bold;
+          font-size: 13px;
+        }
+      }
+
+    }
+  }
+}
