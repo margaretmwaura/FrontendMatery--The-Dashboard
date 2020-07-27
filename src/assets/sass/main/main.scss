@@ -1,112 +1,125 @@
-//body {
-//  //
-//
-//
-//}
-
-
-html,body{
+html, body {
   height: 100%;
   font-family: 'CustomFont';
   width: 100%;
-  overflow-y: scroll;
+  //margin: 0;
+  margin: 0;
+  padding:0;
+  bottom:0;
+  top:0;
+  right:0;
+  left:0;
+  background-color: $very_dark_blue;
 }
 
 .main {
+  //@media screen and (max-width: 500px) {
+  //  height: 1500px;
+  //}
 
-    &_top {
-      background-color: $very_dark_blue_two;
-      padding-top: 5%;
-      &_content_left {
+  &_top {
+    background-color: $very_dark_blue_two;
+    padding-top: 5%;
+    padding-bottom: 10%;
 
-        p {
+    @media screen and (max-width: 500px) {
+      padding-bottom: 30%;
+    }
 
-          font-weight: bolder;
-          color: $white;
-          font-size: 30px;
-          line-height: .9em;
-        }
-        span {
-          font-size: 16px;
-          color: $dark_saturated_blue;
-        }
+    &_content_left {
+
+      p {
+
+        font-weight: bolder;
+        color: $white;
+        font-size: 30px;
+        line-height: .9em;
       }
 
-      &_content_right {
+      span {
+        font-size: 16px;
+        color: $dark_saturated_blue;
+      }
+    }
 
+    &_content_right {
+
+      p {
+        color: $white;
+        float: right;
+      }
+
+      @media screen and (max-width: 500px) {
+        //The setting of float to none is important so that the float on span can apply
         p {
-          color: $white;
+          float: none;
+        }
+
+        span {
           float: right;
         }
+      }
 
-        @media screen and (max-width:500px) {
-          //The setting of float to none is important so that the float on span can apply
-          p {
-            float: none;
-          }
+      /* toggle in label designing */
+      .toggle {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 16px;
+        border-radius: 30px;
+        top: 1px;
+        background-image: linear-gradient(to right, $dark_theme_one, $dark_theme_two)
+      }
 
-          span{
-            float: right;
-          }
-        }
+      /* After slide changes .. the left value affects how far the ball goes to the left */
+      .toggle:after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 12px;
+        border-radius: 30px;
+        background-color: $very_dark_blue_two;
+        top: 1px;
+        left: 4px;
+        transition: all 0.5s;
+      }
 
-        /* toggle in label designing */
-        .toggle {
-          position : relative ;
-          display : inline-block;
-          width : 40px;
-          height : 16px;
-          border-radius: 30px;
-          top: 1px;
-          background-image: linear-gradient(to right, $dark_theme_one, $dark_theme_two)
-        }
+      /* Checkbox cheked effect .. the left value affects how far the ball goes to the right */
+      .checkbox:checked + .toggle::after {
+        left: 24px;
+      }
 
-        /* After slide changes .. the left value affects how far the ball goes to the left */
-        .toggle:after {
-          content: '';
-          position: absolute;
-          width: 10px;
-          height: 12px;
-          border-radius: 30px;
-          background-color: $very_dark_blue_two;
-          top: 1px;
-          left: 4px;
-          transition:  all 0.5s;
-        }
+      /* Checkbox cheked toggle label bg color */
+      .checkbox:checked + .toggle {
+        border: 1px solid $very_dark_blue_two;
+      }
 
-        /* Checkbox cheked effect .. the left value affects how far the ball goes to the right */
-        .checkbox:checked + .toggle::after {
-          left : 24px;
-        }
+      .checkbox:checked + .toggle:after {
+        background-color: $very_dark_blue_two;
+      }
 
-        /* Checkbox cheked toggle label bg color */
-        .checkbox:checked + .toggle {
-          border: 1px solid $very_dark_blue_two;
-        }
-        .checkbox:checked + .toggle:after {
-          background-color: $very_dark_blue_two;
-        }
-        /* Checkbox vanished */
-        .checkbox {
-          display : none;
-        }
+      /* Checkbox vanished */
+      .checkbox {
+        display: none;
       }
     }
+  }
 
-    &_bottom {
+  &_bottom {
 
-      background-color: $very_dark_blue;
+    background-color: $very_dark_blue;
 
-      &_overview {
+    &_overview {
 
-        padding-top: 5%;
-        p{
-          font-weight: bolder;
-          color: $white;
-          font-size: 25px;
-        }
+      padding-top: 5%;
+
+      p {
+        font-weight: bolder;
+        color: $white;
+        font-size: 25px;
       }
     }
+  }
 }
 
 

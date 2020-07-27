@@ -1,7 +1,7 @@
 <template>
     <!-- To note grid-frame does not allow a web page to be scrollable -->
     <div class="grid-y main">
-        <div class="large-3 medium-3 small-3 main_top">
+        <div class="large-5 medium-5 small-5 main_top">
             <div class="grid-container grid-x">
                 <div class="cell large-1 medium-1 small-0"/>
                 <div class="cell large-8 medium-8 small-12 main_top_content_left">
@@ -28,7 +28,7 @@
                 <div class="cell large-1 medium-1 small-0"/>
             </div>
         </div>
-        <div class="large-9 medium-9 small-9 main_bottom">
+        <div class="large-7 medium-7 small-7 main_bottom">
             <div class="grid-container grid-x">
                 <div class="cell large-1 medium-1 small-0"/>
                 <div class="cell large-10 medium-10 small-12">

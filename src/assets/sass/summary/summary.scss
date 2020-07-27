@@ -1,6 +1,9 @@
 .overall
 {
-  //margin-top: -5%;
+  margin-top: -10%;
+  @media screen and (max-width: 500px) {
+    margin-top: -30%;
+  }
   //height: 220px;
   &_one {
     background-color: $boxes;
