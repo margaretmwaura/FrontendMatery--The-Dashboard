@@ -48,7 +48,7 @@
             <div class="grid-container grid-x">
                 <div class="cell large-1 medium-1 small-0"/>
                 <div class="cell large-10 medium-10 small-12">
-                   <Statistics></Statistics>
+                    <Statistics></Statistics>
                 </div>
                 <div class="cell large-1 medium-1 small-0"/>
             </div>
@@ -60,6 +60,7 @@
     import ICountUp from 'vue-countup-v2';
     import Summary from "./components/Summary";
     import Statistics from "./components/Statistics";
+
     export default {
         name: "App",
         components: {
@@ -67,9 +68,9 @@
             Summary,
             Statistics
         },
-        data(){
-            return{
-                darkMode : false,
+        data() {
+            return {
+                darkMode: false,
                 delay: 1000,
                 endVal: 120500,
                 options: {
@@ -82,8 +83,22 @@
                 }
             }
         },
+        watch: {
+            darkMode: {
+                handler: function () {
+                    let htmlElement = document.documentElement;
+                    if (this.darkMode) {
+                        this.$store.commit('SET_APPLICATION_THEME', 'dark');
+                        // htmlElement.setAttribute('theme', 'dark');
+                    } else {
+                        this.$store.commit('SET_APPLICATION_THEME', 'light');
+                        // htmlElement.setAttribute('theme', 'light');
+                    }
+                }
+            },
+        },
         methods: {
-            onReady: function(instance, CountUp) {
+            onReady: function (instance, CountUp) {
                 const that = this;
                 instance.update(that.endVal + 100);
             }
