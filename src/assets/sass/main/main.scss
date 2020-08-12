@@ -41,7 +41,7 @@ html, body {
     &_content_right {
 
       p {
-        color: $white;
+        color: var(--normal-text);
         float: right;
       }
 
@@ -64,7 +64,7 @@ html, body {
         height: 16px;
         border-radius: 30px;
         top: 1px;
-        background-image: linear-gradient(to right, $dark_theme_one, $dark_theme_two)
+        background-image: linear-gradient(to right, var(--slider-one), var(--slider-two))
       }
 
       /* After slide changes .. the left value affects how far the ball goes to the left */
@@ -87,11 +87,11 @@ html, body {
 
       /* Checkbox cheked toggle label bg color */
       .checkbox:checked + .toggle {
-        border: 1px solid $very_dark_blue_two;
+        border: 1px solid var(--toggle-button);
       }
 
       .checkbox:checked + .toggle:after {
-        background-color: $very_dark_blue_two;
+        background-color: var(--toggle-button);
       }
 
       /* Checkbox vanished */
