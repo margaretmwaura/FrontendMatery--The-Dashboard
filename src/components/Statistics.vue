@@ -2,78 +2,49 @@
     <div class="statistics">
         <div class="grid-x grid-margin-x grid-margin-y statistics_one">
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-facebook.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">3%</p></span>
-                </div>
+                <StatisticsDetails description="Page Views" count="87" top-image="icon-facebook"
+                                   bottom-image="icon-up"/>
             </div>
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-facebook.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">2%</p></span>
-                </div>
+                <StatisticsDetails description="Likes" count="52" top-image="icon-facebook"
+                                   bottom-image="icon-down"/>
             </div>
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-instagram.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">2%</p></span>
-                </div>
+                <StatisticsDetails description="Likes" count="5462" top-image="icon-instagram"
+                                   bottom-image="icon-up"/>
             </div>
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-instagram.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">1375%</p></span>
-                </div>
+                <StatisticsDetails description="Profile Views" count="52k" top-image="icon-instagram"
+                                   bottom-image="icon-up"/>
             </div>
+
         </div>
         <div class="grid-x grid-margin-x grid-margin-y statistics_one">
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-twitter.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">1375%</p></span>
-                </div>
+                <StatisticsDetails description="Retweets" count="117" top-image="icon-twitter"
+                                   bottom-image="icon-up"/>
             </div>
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-twitter.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">3%</p></span>
-                </div>
+                <StatisticsDetails description="Likes" count="507" top-image="icon-twitter"
+                                   bottom-image="icon-up"/>
             </div>
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-youtube.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">3%</p></span>
-                </div>
+                <StatisticsDetails description="Likes" count="107" top-image="icon-youtube"
+                                   bottom-image="icon-down"/>
             </div>
             <div class="cell large-3 medium-3 small-12 statistics_one_data">
-                <div class="statistics_one_data_top">
-                    <p>Page Views</p> <img src="img/icon-youtube.svg" alt="Kiwi standing on oval"/>
-                </div>
-                <div class="statistics_one_data_bottom">
-                    <p>87</p> <span><img src="img/icon-up.svg" alt="Kiwi standing on oval"/><p class="extra">3%</p></span>
-                </div>
+                <StatisticsDetails description="Total Views" count="1407" top-image="icon-youtube"
+                                   bottom-image="icon-down"/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import StatisticsDetails from "./StatisticsDetails";
     export default {
-        name: "Statistics"
+        name: "Statistics",
+        components: {StatisticsDetails}
     }
 </script>
 

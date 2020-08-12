@@ -20,6 +20,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/icon-youtube.svg"
   },
   {
-    "url": "main.e89bddba5cc6fe5529ae.js"
+    "url": "main.9e79e5bcc170644f1c2e.js"
   }
 ]);
