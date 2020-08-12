@@ -7,7 +7,7 @@
       padding: 2% 2% 0 2%;
       height: auto;
       display: block;
-      background-color: $boxes;
+      background-color: var(--boxes);
       p{
         display:inline-block;
       }
@@ -18,7 +18,7 @@
       &_top
       {
         p{
-          color: $dark_saturated_blue;
+          color: var(--page-view-text);
           font-weight: bold;
         }
         img{
@@ -28,7 +28,7 @@
 
       &_bottom {
         p{
-          color:$white;
+          color:var(--normal-text);
           font-size: 30px;
           font-weight: bolder;
           display:inline-block;

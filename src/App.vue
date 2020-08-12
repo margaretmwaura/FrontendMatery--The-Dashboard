@@ -83,19 +83,21 @@
                 }
             }
         },
-        watch: {
-            darkMode: {
-                handler: function () {
+        watch :{
+            darkMode :{
+                handler : function()
+                {
                     let htmlElement = document.documentElement;
                     if (this.darkMode) {
                         this.$store.commit('SET_APPLICATION_THEME', 'dark');
-                        // htmlElement.setAttribute('theme', 'dark');
+                        htmlElement.setAttribute('theme', 'dark');
                     } else {
                         this.$store.commit('SET_APPLICATION_THEME', 'light');
-                        // htmlElement.setAttribute('theme', 'light');
+                        htmlElement.setAttribute('theme', 'light');
                     }
                 }
-            },
+
+            }
         },
         methods: {
             onReady: function (instance, CountUp) {

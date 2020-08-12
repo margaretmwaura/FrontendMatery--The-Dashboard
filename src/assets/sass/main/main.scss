@@ -9,13 +9,13 @@ html, body {
   top:0;
   right:0;
   left:0;
-  background-color: $very_dark_blue;
+  background-color: var(--bottom);
 }
 
 .main {
 
   &_top {
-    background-color: $very_dark_blue_two;
+    background-color: var(--top);
     padding-top: 5%;
     padding-bottom: 10%;
 
@@ -26,16 +26,15 @@ html, body {
     &_content_left {
 
       p {
-
         font-weight: bolder;
-        color: $white;
+        color: var(--normal-text);
         font-size: 30px;
         line-height: .9em;
       }
 
       span {
         font-size: 16px;
-        color: $dark_saturated_blue;
+        color: var(--total-followers-text);
       }
     }
 
@@ -104,7 +103,7 @@ html, body {
 
   &_bottom {
 
-    background-color: $very_dark_blue;
+    background-color: var(--bottom);
 
     &_overview {
 
