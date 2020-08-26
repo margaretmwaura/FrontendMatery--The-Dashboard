@@ -4,6 +4,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const workboxPlugin = require('workbox-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     mode: 'development',
     entry: ["./src/main.js"],
@@ -29,7 +31,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./index.html",
             filename: './index.html'
-        })
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: 'public/images', to: 'img' },
+            ],
+        }),
     ],
 
     module: {
