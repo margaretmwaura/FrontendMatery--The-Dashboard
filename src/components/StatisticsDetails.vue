@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="statistics_one_data_top">
-            <p v-text="description"></p> <img :src="`/img/${topImage}.svg`"/>
+            <p v-text="description"></p> <img :src="`/dist/img/${topImage}.svg`"/>
         </div>
         <div class="statistics_one_data_bottom">
             <p v-text="count"></p>
