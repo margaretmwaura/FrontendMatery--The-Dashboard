@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="overall_one_social">
-            <img :src="`../dist/img/${topImage}.svg`">
+            <img :src="imgUrl(topImage)">
             <p v-text="name"></p>
         </div>
         <div class="overall_one_numbers">
@@ -17,12 +17,18 @@
 
 <script>
     import img from '../../public/images/icon-up.svg'
+    let images = require.context('../../public/images/', false, /\.svg$/)
     export default {
         name: "SummaryDetails",
         props: ['name','total','count','topImage'],
         data: function () {
             return {
                 img: img
+            }
+        },
+        methods: {
+            imgUrl: function (path) {
+                return images('./' + path)
             }
         }
     }
