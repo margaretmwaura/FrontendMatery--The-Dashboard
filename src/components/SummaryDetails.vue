@@ -1,9 +1,8 @@
 <template>
     <div>
         <div class="overall_one_social">
-            <img :src="imgUrl(topImage)">
-<!--            <img :src="`require(public/images/${topImage})`">-->
-<!--            <img :src="`/FrontendMatery&#45;&#45;The-Dashboard/dist/img/${bottomImage}.svg`"/>-->
+            <img :src="`./img/${topImage}`"/>
+<!--            <img :src="imgUrl(topImage)">-->
             <p v-text="name"></p>
         </div>
         <div class="overall_one_numbers">

@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="statistics_one_data_top">
-<!--            <p v-text="description"></p><img :src="imgUrl(topImage)">-->
-            <img :src="`./dist/img/${topImage}.svg`"/>
+            <p v-text="description"></p>
+            <img :src="`./img/${topImage}`"/>
         </div>
         <div class="statistics_one_data_bottom">
             <p v-text="count"></p>
-            <span><img :src="imgUrl(bottomImage)">
-            <img :src="`./dist/img/${bottomImage}.svg`"/>
+            <span>
+            <img :src="`./img/${bottomImage}`"/>
         <p v-bind:class="{red : isRed ,  extra : !isRed}">3%</p>
         </span>
         </div>
