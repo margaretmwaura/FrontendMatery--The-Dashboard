@@ -1,7 +1,9 @@
 <template>
     <div>
         <div class="overall_one_social">
-            <img :src="imgUrl(topImage)">
+<!--            <img :src="imgUrl(topImage)">-->
+<!--            <img :src="require(`../../public/images/${topImage}`)">-->
+            <img :src="`/FrontendMatery--The-Dashboard/dist/img/${bottomImage}.svg`"/>
             <p v-text="name"></p>
         </div>
         <div class="overall_one_numbers">
@@ -17,7 +19,7 @@
 
 <script>
     import img from '../../public/images/icon-up.svg'
-    let images = require.context('../../public/images/', false, /\.svg$/)
+    // let images = require.context('../../public/images', false, /\.svg$/)
     export default {
         name: "SummaryDetails",
         props: ['name','total','count','topImage'],
@@ -27,9 +29,10 @@
             }
         },
         methods: {
-            imgUrl: function (path) {
-                return images('./' + path)
-            }
+            // imgUrl: function (path) {
+            //     console.log(images('./' + path));
+            //     return images('./' + path)
+            // }
         }
     }
 </script>

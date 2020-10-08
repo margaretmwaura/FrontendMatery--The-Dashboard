@@ -81,7 +81,7 @@ module.exports = {
                     options: {
                         name: `[name].[ext]`,
                         // Output into parent folder's directory
-                        outputPath: "./img",
+                        outputPath: "/img",
                     }
                 }
             },
