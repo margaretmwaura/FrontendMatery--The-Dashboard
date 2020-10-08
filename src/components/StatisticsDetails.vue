@@ -1,12 +1,14 @@
 <template>
     <div>
         <div class="statistics_one_data_top">
-            <p v-text="description"></p> <img :src="`/FrontendMatery--The-Dashboard/dist/img/${topImage}.svg`"/>
+            <p v-text="description"></p><img :src="imgUrl(topImage)">
+<!--            <img :src="`../dist/img/${topImage}.svg`"/>-->
+
         </div>
         <div class="statistics_one_data_bottom">
             <p v-text="count"></p>
-            <span>
-            <img :src="`/FrontendMatery--The-Dashboard/dist/img//${bottomImage}.svg`"/>
+            <span><img :src="imgUrl(bottomImage)">
+<!--            <img :src="`../dist/img/${bottomImage}.svg`"/>-->
         <p v-bind:class="{red : isRed ,  extra : !isRed}">3%</p>
         </span>
         </div>
@@ -14,6 +16,7 @@
 </template>
 
 <script>
+    let images = require.context('../../public/images', false, /\.svg$/)
     export default {
         name: "StatisticsDetails",
         props: ['description', 'count', 'topImage', 'bottomImage'],
@@ -25,6 +28,12 @@
                     return false;
                 }
             },
+        },
+        methods: {
+            imgUrl: function (path) {
+                console.log(images('./' + path));
+                return images('./' + path).default
+            }
         }
 
     }
