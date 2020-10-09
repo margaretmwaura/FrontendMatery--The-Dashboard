@@ -15,7 +15,6 @@
 </template>
 
 <script>
-    let images = require.context('../../public/images', false, /\.svg$/)
     export default {
         name: "StatisticsDetails",
         props: ['description', 'count', 'topImage', 'bottomImage'],
@@ -28,12 +27,6 @@
                 }
             },
         },
-        methods: {
-            imgUrl: function (path) {
-                console.log(images('./' + path));
-                return images('./' + path).default
-            }
-        }
 
     }
 </script>

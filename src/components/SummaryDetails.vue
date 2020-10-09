@@ -18,7 +18,7 @@
 
 <script>
     import img from '../../public/images/icon-up.svg'
-    let images = require.context('../../public/images', false, /\.svg$/)
+    // let images = require.context('../../public/images', false, /\.svg$/)
     export default {
         name: "SummaryDetails",
         props: ['name','total','count','topImage'],
@@ -27,12 +27,12 @@
                 img: img
             }
         },
-        methods: {
-            imgUrl: function (path) {
-                console.log(images('./' + path));
-                return images('./' + path).default
-            }
-        }
+        // methods: {
+        //     imgUrl: function (path) {
+        //         console.log(images('./' + path));
+        //         return images('./' + path).default
+        //     }
+        // }
     }
 </script>
 
