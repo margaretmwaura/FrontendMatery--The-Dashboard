@@ -17,7 +17,7 @@
 </template>
 
 <script>
-    import img from '../../public/images/icon-up.svg'
+    import img from './../../public/images/icon-up.svg'
     // let images = require.context('../../public/images', false, /\.svg$/)
     export default {
         name: "SummaryDetails",
